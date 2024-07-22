@@ -2,10 +2,11 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
-app.use(cors(
-  {origin:"*"}
-));
+// app.use(cors(
+//   {origin:"*"}
+// ));
 
+app.use(cors());
 
 const userRoutes = require("./routes/userRoutes");
 const dotenv = require("dotenv");
