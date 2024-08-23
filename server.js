@@ -6,7 +6,7 @@ const app = express();
 //   {origin:"*"}
 // ));
 
-app.use(cors());
+app.use(cors("*"));
 
 const userRoutes = require("./routes/userRoutes");
 const dotenv = require("dotenv");
